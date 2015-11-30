@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  GameIland
+//
+//  Created by Air on 15/8/10.
+//  Copyright (c) 2015年 Air. All rights reserved.
+//
+
+#ifndef GameIland_PrefixHeader_pch
+#define GameIland_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#import "AFNetworking.h"
+#import "Helper.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+#import "MBProgressHUD.h"
+#import "FMDatabase.h"
+// 是否有网的键
+#define LFIsNetWorking @"isNetWorking"
+//xbox默认图片
+#define Xbox @"http://p4.yokacdn.com/pic/cr/2014/0227/2523434320.jpg"
+#endif
+#ifdef DEBUG
+#define LFLog(...) NSLog(__VA_ARGS__)
+#else
+#define LFLog(...)
+#endif
+//接口
+#define  XboxUrl @"http://appy4front-cn.newsrep.net/flow/GetArticles?videoonly=0&mood=-1&tags=1296003&premium=0&articleid=0&bottomarticleid=0&edito=1&version=110&packageid=52&sortby=1&regionid=10&pagesize=50&toparticleid=0&onefeed=0"
+#define PS4Url  @"http://appy4front-cn.newsrep.net/flow/GetArticles?videoonly=0&mood=-1&tags=2184485&premium=0&articleid=0&bottomarticleid=0&edito=1&version=110&packageid=52&sortby=1&regionid=10&pagesize=50&toparticleid=0&onefeed=0"
+#define iOSUrl @"http://appy4front-cn.newsrep.net/flow/GetArticles?videoonly=0&mood=-1&tags=1294702&premium=0&articleid=0&bottomarticleid=0&edito=1&version=110&packageid=52&sortby=1&regionid=10&pagesize=50&toparticleid=0&onefeed=0"
+#define AndriodUrl @"http://appy4front-cn.newsrep.net/flow/GetArticles?videoonly=0&mood=-1&tags=1294703&premium=0&articleid=0&bottomarticleid=0&edito=1&version=110&packageid=52&sortby=1&regionid=10&pagesize=50&toparticleid=0&onefeed=0"
+//塔防
+#define TowerProtectUrl @"http://appy4front-cn.newsrep.net/flow/GetArticles?videoonly=0&mood=-1&tags=2597762&premium=0&articleid=0&bottomarticleid=0&edito=1&version=110&packageid=52&sortby=1&regionid=10&pagesize=50&toparticleid=0&onefeed=0"
+//格斗
+#define fightUrl @"http://appy4front-cn.newsrep.net/flow/GetArticles?videoonly=0&mood=-1&tags=1744513&premium=0&articleid=0&bottomarticleid=0&edito=1&version=110&packageid=52&sortby=1&regionid=10&pagesize=50&toparticleid=0&onefeed=0"
+
+
+
+
